@@ -191,8 +191,11 @@ body.dark-mode .toggle-button i {
 }
 
 .menu-item {
-    background-color: #555; 
     color: #ffffff; 
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--bg-color);
 }
 
 .menu-item h3,
@@ -983,5 +986,19 @@ body.dark-mode .social-media a:hover {
     .social-media li {
         display: inline-block;
         margin: 5px;
+    }
+}
+
+/* Medium screens: 2 columns */
+@media (max-width: 768px) {
+    .menu-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Extra small screens: 1 column */
+  @media (max-width: 480px) {
+    .menu-grid {
+      grid-template-columns: 1fr;
     }
 }
