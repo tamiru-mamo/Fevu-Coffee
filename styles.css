@@ -187,6 +187,9 @@ body.dark-mode .toggle-button i {
 
 .menu-grid {
     background-color: #333; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
    
 }
 
@@ -219,9 +222,6 @@ nav.light-mode a {
     color: #000; 
 }
 
-/* .menu-grid {
-    background-color: #ba7a7a; 
-} */
 
 .menu-item {
     background-color: #f9f9f9; 
@@ -415,8 +415,8 @@ body.dark-mode .hero button:hover {
 }
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;; 
+    gap: 1.5rem;
 }
 
 .menu-item {
@@ -992,13 +992,13 @@ body.dark-mode .social-media a:hover {
 /* Medium screens: 2 columns */
 @media (max-width: 768px) {
     .menu-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr) !important;;
     }
   }
   
   /* Extra small screens: 1 column */
   @media (max-width: 480px) {
     .menu-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;;
     }
 }
