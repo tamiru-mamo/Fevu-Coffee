@@ -169,6 +169,20 @@ nav.dark-mode a:hover {
 .light-mode .header-text p {
     color: #000000;
 }
+/* Light mode (default) */
+body.light-mode .toggle-button i {
+    color: #f39c12; /* bright sun-like yellow/orange */
+}
+
+/* Dark mode */
+body.dark-mode .toggle-button i {
+    color: #f1f1f1; /* light/white for dark background */
+}
+
+
+
+
+
 /* Menu Styles */
 
 .menu-grid {
